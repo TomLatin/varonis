@@ -5,6 +5,7 @@
 3. [How to expand the script into a framework](#expand-the-script)
 4. [How to set up and run the script](#setup-script)
 5. [How running it will impact working with GitHub](#github-impact)
+6. [output of `fix_misconfigurations.py`](#output)
 
 ## <span style="color:darkblue" id="specific-configurations">5 configurations with a security impact:</span>
 
@@ -25,7 +26,6 @@
    - **Meaning:** Defines whether a repository is accessible to the public or restricted to authorized users.
    - **Security Impact:** Controlling repository access ensures that sensitive code and data are protected from 
                           unauthorized access, reducing the risk of data breaches and leaks.
-   - **Link for more information:** [Private and Public Repository Status](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28)
 
 4. **Enforce HTTPS for GitHub Pages**:
    - **NIST Category:** System and Communications Protection
@@ -159,7 +159,7 @@ This document outlines the structure, usage, and important considerations for th
 5. **Integration**: 
    - Explores integration possibilities with existing monitoring and management tools.
 
-## <span style="color:darkblue" id="github-impact">How to Set Up and Run the Script:</span>
+## <span style="color:darkblue" id="setup-script">How to Set Up and Run the Script:</span>
 
 ### Prerequisites
 Before setting up and running the script, ensure you have the following prerequisites installed:
@@ -187,7 +187,7 @@ To run the script and fix misconfigurations:
 python misconfiguration_monitoring.py
 ```
 
-## <span style="color:darkblue" id="setup-script">Impact of Running `fix_misconfigurations.py`:</span>
+## <span style="color:darkblue" id="github-impact">Impact of Running `fix_misconfigurations.py`:</span>
 ## Enhanced Security and Access Control
 
 - **Enhanced Security**: Converts public branches to private, bolstering access control.
@@ -196,5 +196,5 @@ python misconfiguration_monitoring.py
 - **Workflow Optimization**: Integrates seamlessly with existing workflows.
 - **Continuous Improvement**: Enables iterative enhancement based on feedback..
 
-## <span style="color:darkblue" id="setup-s![output.jpg](..%2F..%2F..%2FDownloads%2Foutput.jpg)cript">Output of `fix_misconfigurations.py`:</span>
+## <span style="color:darkblue" id="output">Output of `fix_misconfigurations.py`:</span>
 <img src="readme_pictures/output.jpg" alt="Step 2 Screenshot" style="max-width:auto; height:auto;display: inline-block; float: left;"> <br style="clear:both;"/>
